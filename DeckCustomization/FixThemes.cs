@@ -43,7 +43,7 @@ namespace DeckCustomization
         {
             foreach (CardInfo card in cards)
             {
-                switch (card.cardName.ToLower())
+                switch (card.GetFieldValue("cardName").ToString().ToLower())
                 {
                     case "big bullet":
                         card.colorTheme = CardThemeColor.CardThemeColorType.DestructiveRed;
